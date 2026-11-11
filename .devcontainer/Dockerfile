@@ -13,6 +13,7 @@ RUN \
       less \
       mc \
       procps \
+      ssh \
       sudo \
       traceroute \
       wget \
