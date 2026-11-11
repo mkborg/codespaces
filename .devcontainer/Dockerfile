@@ -1,0 +1,18 @@
+FROM debian
+RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
+    && apt-get -y install --no-install-recommends bundler
+
+RUN \
+  apt-get update \
+  && \
+    DEBCONF_NONINTERACTIVE_SEEN=true \
+    DEBIAN_FRONTEND=noninteractive \
+    apt-get install -y --no-install-recommends \
+      busybox-static \
+      mc \
+      procps \
+      sudo \
+      traceroute \
+      wget \
+      xz-utils \
+  && apt-get clean all
