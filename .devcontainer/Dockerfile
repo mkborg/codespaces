@@ -9,6 +9,8 @@ RUN \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y --no-install-recommends \
       busybox-static \
+      git \
+      less \
       mc \
       procps \
       sudo \
