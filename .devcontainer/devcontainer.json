@@ -2,9 +2,9 @@
   "build": { "dockerfile": "Dockerfile" },
   "capAdd": ["NET_ADMIN"],
   "mounts": [
-    "source=/,target=/workspace/mnt/host,type=bind"
+    "source=/,target=/mnt/host,type=bind"
   ],
-  "remoteUser": "codespace",
+  "remoteUser": "xcodespace",
   "runArgs": [
     "--device=/dev/net/tun",
     "--privileged",
