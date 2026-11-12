@@ -4,7 +4,7 @@
   "runArgs": [
     "--device=/dev/net/tun",
     "--privileged",
-    "--mount source=/,target=/mnt2/host,type=bind",
+    "--mount", "source=/,target=/mnt2/host,type=bind",
     "--init"
   ]
 }
