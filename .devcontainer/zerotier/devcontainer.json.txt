@@ -1,0 +1,9 @@
+{
+  "image": "://microsoft.com",
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--device=/dev/net/tun"
+  ],
+  "postCreateCommand": "curl -s https://install.zerotier.com | sudo bash",
+  "postStartCommand": "sudo /usr/sbin/zerotier-one -d && sleep 2 && sudo zerotier-cli join $ZEROTIER_NETWORK_ID"
+}

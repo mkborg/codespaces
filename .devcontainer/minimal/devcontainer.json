@@ -3,8 +3,8 @@
   "capAdd": ["NET_ADMIN"],
   "runArgs": [
     "--device=/dev/net/tun",
-    "--privileged",
-    "--mount", "source=/,target=/mnt2/host,type=bind",
-    "--init"
+    "--init",
+    "--mount", "source=/,target=/mnt/host,type=bind",
+    "--privileged"
   ]
 }
