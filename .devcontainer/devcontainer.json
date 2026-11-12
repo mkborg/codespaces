@@ -4,7 +4,6 @@
   "mounts": [
     "source=/,target=/mnt/host,type=bind"
   ],
-  "remoteUser": "xcodespace",
   "runArgs": [
     "--device=/dev/net/tun",
     "--privileged",
