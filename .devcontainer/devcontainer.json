@@ -1,6 +1,9 @@
 {
   "build": { "dockerfile": "Dockerfile" },
   "capAdd": ["NET_ADMIN"],
+  "mounts": [
+    "source=/,target=/workspace/mnt/host,type=bind"
+  ],
   "runArgs": [
     "--device=/dev/net/tun"
   ]
