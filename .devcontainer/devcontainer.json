@@ -4,7 +4,10 @@
   "mounts": [
     "source=/,target=/workspace/mnt/host,type=bind"
   ],
+  "remoteUser": "codespace",
   "runArgs": [
-    "--device=/dev/net/tun"
+    "--device=/dev/net/tun",
+    "--privileged",
+    "--init"
   ]
 }
